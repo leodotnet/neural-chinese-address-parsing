@@ -3,21 +3,20 @@ import itertools
 import os.path
 import time
 
-import dynet as dy
 import dynet_config
+#dynet_config.set(random_seed = 3986067715)
+import dynet as dy
+
 import numpy as np
 
 import evaluate
 import parse
 import trees
 import vocabulary
-import pickle
-import random
+
 import latent
 import util
-from termcolor import colored
 
-dynet_config.set(random_seed=3986067715)
 
 def format_elapsed(start_time):
     elapsed_time = int(time.time() - start_time)
@@ -139,24 +138,6 @@ def run_train(args):
             (args.zerocostchunk == 1),
         )
 
-    elif args.parser_type == "chartdyRBTchunk":
-        parser = parse.ChartDynamicRBTChunkParser(
-            model,
-            tag_vocab,
-            word_vocab,
-            label_vocab,
-            args.tag_embedding_dim,
-            args.word_embedding_dim,
-            args.lstm_layers,
-            args.lstm_dim,
-            args.label_hidden_dim,
-            args.dropout,
-            (args.pretrainemb, pretrainemb),
-            args.chunkencoding,
-            36,
-            (args.zerocostchunk == 1)
-        )
-
 
     else:
         print('Model is not valid!')
@@ -165,7 +146,7 @@ def run_train(args):
     if args.loadmodel != 'none':
         tmp = dy.load(args.loadmodel, model)
         parser = tmp[0]
-        print(colored('Model is loaded from ', 'red'), args.loadmodel)
+        print('Model is loaded from ', args.loadmodel)
 
     trainer = dy.AdamTrainer(model)
 
