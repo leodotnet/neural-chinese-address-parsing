@@ -1,5 +1,6 @@
 # Neural Chinese Address Parsing
-This page contains the code used in the work "Neural Chinese Address Parsing" published at NAACL 2018.
+This page contains the code used in the work ["Neural Chinese Address Parsing"](http://statnlp.org/research/sp) published at [NAACL 2019](https://naacl2019.org/program/accepted/).
+
 
 ## Contents
 1. [Usage](#usage)
@@ -30,9 +31,9 @@ The source code is written in Dynet, which can be found under the "src" folder.
 
 ## Data
 
-The data is stored in "data" folder containing "train.txt", "dev.txt" and "test.txt". The embedding file "giga.vec100" is also located in the folder "data".
+The **data** is stored in "data" folder containing "train.txt", "dev.txt" and "test.txt". The embedding file "giga.vec100" is also located in the folder "data".
 
-The annotation guidelines are in the folder ["data/anno"](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno). Both [Chinese](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-cn.md) and [English](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-en.md) versions are available.
+**The annotation guidelines** are in the folder ["data/anno"](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno). Both [Chinese](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-cn.md) and [English](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-en.md) versions are available.
 
 ## Citation
 If you use this software for research, please cite our paper as follows:
@@ -51,4 +52,4 @@ publisher = "Association for Computational Linguistics",
 ## Credits
 The code in this repository are based on https://github.com/mitchellstern/minimal-span-parser
 
-Email to hao_li@mymail.sutd.edu.sg if any inquery.
+Email to [hao_li@mymail.sutd.edu.sg](hao_li@mymail.sutd.edu.sg) if any inquery.
