@@ -32,7 +32,7 @@ The source code is written in Dynet, which can be found under the "src" folder.
 
 The data is stored in "data" folder containing "train.txt", "dev.txt" and "test.txt". The embedding file "giga.vec100" is also located in the folder "data".
 
-The annotation guidelines are in the folder "data/anno". Both Chinese and English versions are available.
+The annotation guidelines are in the folder ["data/anno"](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno). Both [Chinese](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-cn.md) and [English](https://github.com/leodotnet/neural-chinese-address-parsing/blob/master/data/anno/anno-en.md) versions are available.
 
 ## Citation
 If you use this software for research, please cite our paper as follows:
