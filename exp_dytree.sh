@@ -22,7 +22,7 @@ do
 #prov #city district devzone town community road subroad roadno subroadno poi subpoi #houseno cellno floorno roomno person otherinfo assist redundant #country #
 
 
-for nontlabelstyle in 1 #0 #1 3 #1 2
+for nontlabelstyle in 0 #0 #1 3 #1 2
 do
 
 for zerocostchunk in 0 #0 1

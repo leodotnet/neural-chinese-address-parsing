@@ -4,7 +4,7 @@ import os.path
 import time
 
 import dynet_config
-#dynet_config.set(random_seed = 3986067715)
+dynet_config.set(random_seed = 3986067715)
 import dynet as dy
 
 import numpy as np

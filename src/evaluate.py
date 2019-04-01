@@ -5,7 +5,7 @@ import subprocess
 import tempfile
 
 import trees
-from termcolor import colored
+
 
 class FScore(object):
     def __init__(self, recall, precision, fscore):
