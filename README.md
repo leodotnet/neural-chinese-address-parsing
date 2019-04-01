@@ -18,11 +18,12 @@ Run the following command to try out the APLT(sp=7) model in the paper.
 ```sh
 ./exp_dytree.sh
 ```
-After the training is complete, type the following command to display the result on test data.
+After the training is complete, type the following command to display the result on test data. The performance outputed by conlleval.pl is shown as below.
 ```sh
 perl conlleval.pl < addr_dytree_giga_0.4_200_1_chardyRBTC_dytree_1_houseno_0_0.test.txt
 ```
 
+![alt text](log.jpg)
 
 ## SourceCode
 
