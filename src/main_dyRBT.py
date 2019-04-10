@@ -3,8 +3,9 @@ import itertools
 import os.path
 import time
 
+seed = 3986067715
 import dynet_config
-dynet_config.set(random_seed = 3986067715)
+dynet_config.set(random_seed = seed)
 import dynet as dy
 
 import numpy as np
@@ -33,6 +34,7 @@ def format_elapsed(start_time):
 
 def run_train(args):
 
+    args.numpy_seed = seed
     if args.numpy_seed is not None:
         print("Setting numpy random seed to {}...".format(args.numpy_seed))
         np.random.seed(args.numpy_seed)
