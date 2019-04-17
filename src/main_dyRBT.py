@@ -3,7 +3,7 @@ import itertools
 import os.path
 import time
 
-seed = 3986067715
+seed = 3986067777
 import dynet_config
 dynet_config.set(random_seed = seed)
 import dynet as dy
