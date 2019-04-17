@@ -41,11 +41,10 @@ If you use this software for research, please cite our paper as follows:
 
 ```
 @InProceedings{chineseaddressparsing19li, 
-author = "Li, Hao and Lu, Wei", 
+author = "Li, Hao and Lu, Wei and Xie, Pengjun and Li, Linlin", 
 title = "Neural Chinese Address Parsing", 
 booktitle = "Proc. of NAACL", 
 year = "2019", 
-publisher = "Association for Computational Linguistics", 
 }
 ```
 
